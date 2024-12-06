@@ -1,0 +1,377 @@
+/* polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*paragraphe*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); /*titre*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Évite tout débordement horizontal */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* list-style: none; */
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body{
+  background: #FDFFFC;
+}
+
+nav{
+  background: #223843;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: 40px; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo{
+  width: 155px;
+}
+
+nav ul li{
+display: inline-block;
+padding: 10px 20px ;
+list-style: none;
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #D89393;
+}
+
+nav ul li a:hover{
+  color: #FDFFFC;
+  transition: .3s;
+}
+
+/* sous menu */
+
+.submenu{
+  display: none; /* Masquer le sous-menu par défaut */
+  position: absolute;
+  top: 100%; /* Positionner en dessous du parent */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Ajuster le centrage */
+  padding: 10px 0; /* Espacement vertical */
+  width: max-content; /* Ajuster la largeur au contenu */
+  background-color: #589226;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.submenu li {
+  display: block;
+  /* padding: 10px 20px; */
+}
+
+.submenu li a {
+  color: #FDFFFC;
+}
+
+.submenu li a:hover {
+  color: #D89393;
+}
+
+.dropdown {
+  position: relative; /* Nécessaire pour le positionnement absolu de .submenu */
+}
+
+/* Affichage du sous-menu au survol */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+button{
+    border: none;
+    background: #FDFFFC !important;
+    padding: 12px 30px !important;
+    border-radius: 5px;
+    color: #D89393;
+    font-size: 20px;
+    transition: .4s;
+    gap: 10px;
+}
+
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.nav-divider {
+  border: none;
+  height: 2px;
+  background-color: #D89393; 
+  width: 80%;
+  margin: 8px auto 0; 
+}
+
+.carousel-inner img {
+  max-height: 705px; /* Ajustez cette valeur selon vos besoins */
+  object-fit: cover; /* Permet de préserver l'aspect proportionnel de l'image */
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
+
+.carousel-caption h1 {
+  font-size: 64px; 
+  color: #D89393; 
+  font-weight: bold; 
+  text-transform: uppercase;
+  letter-spacing: 5px; 
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
+  /* background: rgba(0, 0, 0, 0.5);  */
+  padding: 10px 20px; 
+  border-radius: 10px; 
+}
+
+
+/* wrapper Section */
+.wrapper {
+  display: flex;
+  flex-direction: column; /* Aligne les sections verticalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  align-items: center; /* Centre les sections horizontalement */
+  padding: 20px;
+  gap: 50px; /* Espace entre les sections */
+  background-color: #589226;
+  text-align: center;
+}
+
+.first-section, .right {
+  display: flex;
+  justify-content: center; /* Aligne le contenu horizontalement */
+  align-items: center; /* Aligne les éléments verticalement */
+  gap: 20px; /* Espace entre l'image et le texte */
+
+  max-width: 1200px; /* Largeur maximale pour éviter une trop grande expansion */
+}
+
+.first-section img, .right img {
+  width: 320px;
+  height: auto;
+}
+
+.text-box, .text-left {
+  flex: 1; /* Prend 50% de la largeur disponible */
+}
+
+.text-box h1, .text-left h1 {
+  font-size: 42px;
+  color: #FDFFFC;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.text-box p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #223843;
+}
+
+.text-box strong {
+  color: #FDFFFC;
+}
+
+/* Mission Section */
+.mission {
+  padding: 50px;
+  color: #223843;
+  text-align: center;
+}
+
+.mission h1 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #223843;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #D89393;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  min-height: 300px;
+  text-align: center;
+  color: #FDFFFC;
+}
+
+.card .image-cards {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 0 auto 15px auto; /* Centre horizontalement et espace en bas */
+  display: block;
+}
+
+.card h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* pied de page */
+
+  footer{
+    margin-top: 50px; 
+    background: #223843;
+    height: auto;
+    width: 100vw;
+    color: #FDFFFC;
+    /* padding-top: 40px; */
+  }
+
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content img{
+    width: 155px;
+  }
+
+  .footer-content p{
+    font-size: 20px;
+    color: #D89393;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+  }
+
+  .socials {
+    display: inline-flex;
+    list-style: none;
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .socials li a{
+    text-decoration: none;
+    color: inherit; /* Hérite la couleur définie dans l'élément parent */
+    display: inline-flex; /* S'aligne avec le comportement du conteneur */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .socials .icon {
+    position: relative;
+    background: #223843;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .socials .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .socials .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .socials .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .socials .icon:hover span,
+  .socials .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .socials .facebook:hover,
+  .socials .facebook:hover .tooltip,
+  .socials .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .socials .mail:hover:hover,
+  .socials .mail:hover:hover .tooltip,
+  .socials .mail:hover:hover .tooltip::before {
+    background: #D89393;
+    color: #fff;
+  }
+  
+  .socials .instagram:hover,
+  .socials .instagram:hover .tooltip,
+  .socials .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+
+  .footer-bottom{
+    /* bottom: 0; */
+    /* background: #DD7230; */
+    border-top: 2px solid #D89393;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center !important;
+  }
+
+  .footer-bottom p{
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    position: relative;
+    top: 6px;
+  }

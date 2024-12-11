@@ -16,6 +16,11 @@ html, body {
     font-family: "Montserrat", sans-serif;
 }
 
+body{
+  background: rgb(216,147,147);
+background: linear-gradient(63deg, rgba(216,147,147,1) 0%, rgba(253,255,252,1) 99%);
+}
+
 nav{
     background: #223843;
     display: flex;
@@ -27,7 +32,7 @@ nav{
 }
 
 .logo{
-    width: 155px;
+    width: 165px;
 }
 
 nav ul li{
@@ -120,7 +125,7 @@ button:hover{
   margin: 2rem auto;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 1);
   padding: 2rem;
   margin-bottom: 30px; 
 }
@@ -191,7 +196,7 @@ button:hover{
   margin: 2rem auto;
   background: #FDFFFC;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 0.748);
   padding: 2rem;
   margin-bottom: 30px;
 }
@@ -262,7 +267,7 @@ button:hover{
   margin: 2rem auto;
   background: #FDFFFC;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 0.748);
   padding: 2rem;
   margin-bottom: 30px;
   display: flex;
@@ -356,7 +361,7 @@ button:hover{
   margin: 2rem auto;
   background: #FDFFFC;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 0.748);
   padding: 2rem;
   margin-bottom: 30px;
   display: flex;
@@ -384,7 +389,7 @@ button:hover{
   padding: 2rem;
   background-color: #FDFFFC; /* Couleur douce pour le fond */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 0.748);
   max-width: 800px;
   margin-bottom: 30px;
   margin: 2rem auto; /* Centrer la section */
@@ -483,7 +488,7 @@ button:hover{
   padding: 2rem;
   background-color: #FDFFFC; /* Couleur douce pour le fond */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 147, 147, 0.278);
+  box-shadow: 0 4px 8px rgba(34, 56, 67, 0.748);
   max-width: 800px;
   margin-bottom: 30px;
   margin: 2rem auto; /* Centrer la section */

@@ -10,75 +10,80 @@
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding-top: 40px; */
-    padding-left: 10%;
-    padding-right: 10%;
+  background: #223843;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: 40px; */
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .logo{
-    width: 155px;
+  width: 165px;
 }
 
 nav ul li{
-  display: inline-block;
-  padding: 10px 20px ;
-  list-style: none;
+display: inline-block;
+padding: 10px 20px ;
+list-style: none;
 }
 
 nav ul li a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #D89393;
+  text-decoration: none;
+  font-weight: bold;
+  color: #D89393;
 }
 
 nav ul li a:hover{
-    color: #223843;
-    transition: .3s;
+  color: #FDFFFC;
+  transition: .3s;
 }
 
 /* sous menu */
 
 .submenu{
-    display: none; /* Masquer le sous-menu par défaut */
-    position: absolute;
-    top: 100%; /* Positionner en dessous du parent */
-    left: 50%; /* Centrer horizontalement */
-    transform: translateX(-50%); /* Ajuster le centrage */
-    padding: 10px 0; /* Espacement vertical */
-    width: max-content; /* Ajuster la largeur au contenu */
-    background-color: #589226;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    z-index: 10;
+  display: none; /* Masquer le sous-menu par défaut */
+  position: absolute;
+  top: 100%; /* Positionner en dessous du parent */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Ajuster le centrage */
+  padding: 10px 0; /* Espacement vertical */
+  width: max-content; /* Ajuster la largeur au contenu */
+  background-color: #589226;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .submenu li {
-    display: block;
-    /* padding: 10px 20px; */
+  display: block;
+  /* padding: 10px 20px; */
 }
 
 .submenu li a {
-    color: #FDFFFC;
+  color: #FDFFFC;
 }
 
 .submenu li a:hover {
-    color: #D89393;
+  color: #D89393;
+}
+
+.dropdown {
+  position: relative; /* Nécessaire pour le positionnement absolu de .submenu */
 }
 
 /* Affichage du sous-menu au survol */
 .dropdown:hover .submenu {
-    display: block;
+  display: block;
 }
 
 button{
     border: none;
-    background: #223843;
+    background: #FDFFFC ;
     padding: 12px 30px;
     border-radius: 5px;
-    color: whitesmoke;
+    color: #D89393;
     font-size: 20px;
     transition: .4s;
     gap: 10px;
@@ -87,14 +92,6 @@ button{
 button:hover{
     transform: scale(1.3);
     cursor: pointer;
-}
-
-.nav-divider {
-    border: none;
-    height: 2px;
-    background-color: #D89393; 
-    width: 80%;
-    margin: 8px auto 0; 
 }
 
 /* usage */

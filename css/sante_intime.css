@@ -90,7 +90,7 @@ button{
     border: none;
     background: #FDFFFC;
     padding: 12px 30px;
-    border-radius: 5px;
+    border-radius: 5px !important;
     color: #D89393;
     font-size: 20px;
     transition: .4s;
@@ -707,4 +707,9 @@ footer{
   text-transform: capitalize;
   position: relative;
   top: 6px;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
 }

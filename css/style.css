@@ -278,6 +278,7 @@ button:hover{
   display: flex;
   gap: 20px;
   justify-content: center;
+  text-decoration: none;
 }
 
 .card {
@@ -292,10 +293,6 @@ button:hover{
   text-decoration: none; /* Supprimer soulignement */
   display: block; /* Rendre tout cliquable */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card a {
-  color: inherit; /* Hériter de la couleur du parent */
 }
 
 .card .image-cards {
@@ -352,7 +349,7 @@ button:hover{
 }
 
 .webinaire-card:hover {
-  /* transform: scale(1.02); */
+  transform: scale(1.02);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -366,9 +363,13 @@ button:hover{
 }
 
 /* Effet de zoom sur l'image au survol de la carte */
-.webinaire-card:hover .webinaire-image {
+.webinaire-image:hover {
   transform: scale(3.1);
 }
+
+/* .webinaire-card:hover .webinaire-image {
+  transform: scale(3.1);
+} */
 
 .webinaire-info {
   text-align: left;

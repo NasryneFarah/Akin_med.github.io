@@ -97,6 +97,7 @@ button:hover{
 /* usage */
 .usage{
   margin-top: 30px;
+  text-align: center; /* Centrer le texte */
 }
 
 .usage h1{
@@ -104,15 +105,21 @@ button:hover{
   margin-bottom: 1rem;
   color: #D89393;
   font-weight: normal;
-  text-align: center;
+  /* text-align: center; */
 }
 .container {
   display: flex;
-  justify-content: flex-start; /* Centre les cartes */
+  justify-content: center; /* Centre les cartes horizontalement */
   gap: 1.5rem; /* Espacement entre les cartes */
-  flex-wrap: nowrap; /* Permet d'adapter l'affichage sur petits écrans */
-  margin: 10px auto;
+  flex-wrap: wrap; /* Permet de s'adapter aux petits écrans */
+  margin: 0 auto; /* Centre le conteneur */
   padding: 0 15px;
+  max-width: 1200px; /* Limite la largeur totale */
+  /* justify-content: flex-start; /* Centre les cartes 
+  gap: 1.5rem; /* Espacement entre les cartes 
+  flex-wrap: nowrap; /* Permet d'adapter l'affichage sur petits écrans 
+  margin: 10px auto;
+  padding: 0 15px; */
   /* overflow: auto;
   display: flex;
   scroll-snap-type: x mandatory;

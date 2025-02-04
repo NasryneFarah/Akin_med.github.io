@@ -367,6 +367,10 @@ button:hover{
   transform: scale(3.1);
 }
 
+/* .webinaire-card:hover .webinaire-image {
+  transform: scale(3.1);
+} */
+
 .webinaire-info {
   text-align: left;
 }

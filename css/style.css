@@ -239,6 +239,11 @@ button:hover{
   margin-bottom: 15px;
 }
 
+.text-left h1{
+  right: -10%;
+  position: relative;
+}
+
 .text-box p {
   text-align: justify;
   font-size: 18px;
@@ -248,6 +253,23 @@ button:hover{
 
 .text-box strong {
   color: #FDFFFC;
+}
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.inline-list li {
+  display: inline-block;
+  background: #fdfffc;
+  color: #223843;
+  font-weight: bold;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Mission Section */

@@ -181,14 +181,6 @@ button:hover{
   margin-bottom: 45px;
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  text-align: center;
-}
-
 .carousel-caption h1 {
   font-size: 64px; 
   color: #D89393; 
@@ -200,7 +192,6 @@ button:hover{
   padding: 10px 20px; 
   border-radius: 10px; 
 }
-
 
 /* wrapper Section */
 .wrapper {
@@ -455,6 +446,11 @@ button:hover{
     font-weight: bold;
     position: relative;
     bottom: 10px;
+  }
+
+  .footer-content .accroche{
+    text-transform: uppercase;
+    color: #f58634;
   }
 
   .socials {

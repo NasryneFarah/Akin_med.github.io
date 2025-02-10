@@ -231,8 +231,13 @@ button:hover{
 }
 
 .text-left h1{
-  right: -10%;
+  right: -19%;
   position: relative;
+}
+
+.right img{
+  position: relative;
+  right: -10%;
 }
 
 .text-box p {
@@ -450,7 +455,6 @@ button:hover{
 
   .footer-content .accroche{
     text-transform: uppercase;
-    color: #f58634;
   }
 
   .socials {
